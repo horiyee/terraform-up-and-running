@@ -1,0 +1,6 @@
+[submodule "submodules/terraform-workspace"]
+	path = submodules/terraform-workspace
+	url = https://gist.github.com/horiyee/9192375035ea4e41aa57ee47fe0933d4
+[submodule "submodules/webserver-cluster"]
+	path = submodules/webserver-cluster
+	url = https://gist.github.com/00574674bd02cc258c442b43de19f041.git
