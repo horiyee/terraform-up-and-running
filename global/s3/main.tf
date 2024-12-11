@@ -1,3 +1,14 @@
+terraform {
+  backend "s3" {
+    bucket = "terraform-up-and-running-state-hands-on"
+    key = "global/s3/terraform.tfstate"
+    region = "us-east-1"
+    
+    dynamodb_table = "terraform-up-and-running-locks-hands-on"
+    encrypt = true
+  }
+}
+
 provider "aws" {
   region = "us-east-1"
 }
