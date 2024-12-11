@@ -1,14 +1,3 @@
-terraform {
-  backend "s3" {
-    bucket = "terraform-up-and-running-state-hands-on"
-    key = "stage/services/webserver-cluster/terraform.tfstate"
-    region = "us-east-1"
-    
-    dynamodb_table = "terraform-up-and-running-locks-hands-on"
-    encrypt = true
-  }
-}
-
 provider "aws" {
   region = "us-east-1"
 }
