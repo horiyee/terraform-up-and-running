@@ -6,4 +6,4 @@ cat > index.html <<EOF
 <p>DB port: ${db_port}</p>
 EOF
 
-nohup busybox httpd -f -p ${server_port} &
+python3 -m http.server 8080 --directory . &
